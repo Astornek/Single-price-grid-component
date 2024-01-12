@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  /*Neutral*/
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  background-color: var(--Light-Gray-Blue);
+  color: var(--Grayish-Blue);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 45rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgb(8, 8, 8, 0.6);
+}
+.wrap-top {
+  padding: 2rem;
+  background-color: white;
+  width: 100%;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+.sub-title {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.des {
+  max-width: 35rem;
+}
+.wrap-bot {
+  display: flex;
+  background-color: var(--Cyan);
+  width: 100%;
+  color: var(--Light-Gray);
+}
+.bot-one,
+.bot-two {
+  max-width: 25rem;
+  width: 100%;
+  padding: 2rem;
+}
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+}
+.price {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: hsl(207, 8%, 79%);
+}
+.price span {
+  color: var(--Light-Gray);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.access {
+  margin-bottom: 2rem;
+}
+.sign-byn {
+  width: 80%;
+  background-color: var(--Bright-Yellow);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.bot-one {
+  background-color: hsl(179, 48%, 45%);
+}
+ul li {
+  list-style: none;
+  color: hsl(207, 8%, 79%);
+}
+.wrap-top {
+  border-radius: 10px 10px 0 0;
+}
+.bot-one {
+  border-radius: 0 0 0 10px;
+}
+.bot-two {
+  border-radius: 0 0 10px 0;
+}
+.wrap-bot {
+  border-radius: 10px;
+}
+@media (max-width: 630px) {
+  .wrap-bot {
+    flex-wrap: wrap;
+  }
+  .bot-one {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 0px;
+  }
+  main {
+    margin: 3rem 0rem;
+  }
+  .bot-two {
+    border-radius: 0 0 10px 10px;
+  }
+  .sub-title {
+    font-size: 1.05rem;
+  }
+}
